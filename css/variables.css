@@ -1,0 +1,12 @@
+:root {
+    /* Colors */
+    --primary-clr: hsl(35, 45%, 58%);
+    --secondary-clr: hsl(0, 0%, 0%);
+    --white: hsl(100, 100%, 100%);
+
+    /* Font Weights */
+    --fw-light: 400;
+    --fw-medium: 600;
+    --fw-semibold: 800;
+    --fw-bold: 900;
+}

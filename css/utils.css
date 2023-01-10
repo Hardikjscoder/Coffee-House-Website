@@ -1,0 +1,47 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Display flex */
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* Others */
+
+.btn {
+    margin: .5rem 1rem;
+    padding: .75em 1.25em;
+    border: 1px solid var(--primary-clr);
+    border-radius: none;
+    color: var(--primary-clr);
+    background: transparent;
+}
+
+.section {
+    margin: 2rem 0;
+}

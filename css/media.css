@@ -1,0 +1,52 @@
+@media (max-width: 999px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: baseline !important;
+        height: 355px;
+        transition: all 500ms cubic-bezier(0.35, 1.22, 0.41, 1.04);
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: baseline !important;
+        gap: 3rem 2rem !important;
+    }
+
+    .burger {
+        display: block !important;
+    }
+
+    .h-nav {
+        height: 60px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .brand {
+        margin-left: -11px;
+    }
+
+    .about-container,
+    .services,
+    .blogs,
+    .menu,
+    .right-menu-images,
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .left-menu-content {
+        text-align: center !important;
+        padding: 1em;
+    }
+
+    .about-container .right-about-content {
+        width: auto !important;
+    }
+}

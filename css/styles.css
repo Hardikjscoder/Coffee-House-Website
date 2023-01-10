@@ -1,0 +1,515 @@
+/* Navbar */
+.navbar {
+    padding: .5em 5.75em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: 10000000;
+}
+
+.navbar .logo {
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.navbar .logo .brand {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: .25em;
+    position: relative;
+}
+
+.navbar .logo .brand::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: -9px;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50% 0 50% 0;
+    background: var(--primary-clr);
+}
+
+.navbar .navlist {
+    gap: 1rem 2rem;
+}
+
+.navbar .navlist a {
+    color: var(--white);
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.navbar .navlist a:hover {
+    color: var(--primary-clr);
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    background: var(--white);
+    border-radius: 5px;
+    width: 24px;
+    height: 4px;
+    margin: 4px 0;
+}
+
+.cart {
+    margin-left: -5px;
+}
+
+.cart img {
+    cursor: pointer;
+}
+
+hr {
+    background: white;
+    height: 5rem;
+}
+
+/* Navbar */
+
+
+/* Slider */
+.slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.slider--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider--feature {
+    text-align: center;
+}
+
+.slider--title {
+    font-size: 3.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.slider--title::after {
+    content: "Welcome";
+    font-family: 'Great Vibes', sans-serif;
+    position: absolute;
+    inset: 0;
+    top: -35px;
+    font-size: 3rem;
+    color: var(--primary-clr);
+    text-transform: capitalize;
+}
+
+.slider--text {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 0.5rem 0;
+}
+
+.slider__btn-right,
+.slider__btn-left {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+    color: #eee;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.slider--btn {
+    background: transparent;
+    text-transform: uppercase;
+    border: none;
+    color: var(--primary-clr);
+    border: 3px solid var(--primary-clr);
+    outline: none;
+    font-weight: var(--fw-semibold);
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.slider__btn-left:hover,
+.slider__btn-right:hover {
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.1s linear;
+    animation-timing-function: ease;
+}
+
+/* Slider */
+
+
+
+/* About Section */
+
+.about-container {
+    background: rgba(0, 0, 0, 1);
+    color: var(--white);
+}
+
+.about-container .left-bg-img {
+    background-image: url(https://preview.colorlib.com/theme/coffeeblend/images/about.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.about-container .right-about-content {
+    padding: 2em;
+    width: 115%;
+}
+
+.about-container .right-about-content h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    position: relative;
+}
+
+.about-container .right-about-content h2::after {
+    content: "Discover";
+    font-family: 'Great Vibes', sans-serif;
+    position: absolute;
+    inset: 0;
+    top: -35px;
+    font-size: 3rem;
+    color: var(--primary-clr);
+    text-transform: capitalize;
+}
+
+.about-container .right-about-content p {
+    font-size: 1.25rem;
+    line-height: 22.5px;
+}
+
+/* About Section */
+
+
+/* Services Section */
+.services {
+    background-color: var(--primary-clr);
+    min-height: 50vh;
+}
+
+.service-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.service-icon i {
+    font-size: 4.5rem;
+}
+
+.service-content h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.service-content p {
+    font-size: 1.25rem;
+}
+
+/* Services Section */
+
+
+
+/* Features section */
+.features {
+    background-image: url(/assets/image5.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 70vh;
+    color: var(--white);
+    gap: 3rem 6rem;
+    flex-wrap: wrap;
+}
+
+.feature-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.feature-icon i {
+    font-size: 4.5rem;
+}
+
+.feature-content h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.feature-content p {
+    font-size: 1.75rem;
+}
+
+/* Features section */
+
+
+/* blogs Section */
+
+#blogs-section {
+    background-image: url(/assets/image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(13, 13, 13, 0.89);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    min-height: 70vh;
+    color: var(--white);
+}
+
+#blogs-section h2 {
+    color: var(--white);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.5em;
+    position: relative;
+}
+
+#blogs-section h2::after {
+    content: "Blogs";
+    font-family: 'Great Vibes', sans-serif;
+    position: absolute;
+    inset: 0;
+    padding-top: 1.1em;
+    top: -12px;
+    font-size: 3rem;
+    color: var(--primary-clr);
+    text-transform: capitalize;
+}
+
+#blogs-section .blog-para {
+    text-align: center;
+    color: rgb(115, 108, 108);
+    padding-top: 0.5em;
+    font-size: 1.5rem;
+}
+
+.blogs {
+    gap: 2rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+.blog img {
+    width: 30vw;
+}
+
+.blog .blog-date {
+    color: rgb(115, 108, 108);
+    font-size: 1.5rem;
+}
+
+.blog h3 {
+    font-size: 2rem;
+}
+
+.blog .blog-content {
+    font-size: 1.5rem;
+}
+
+.blog a {
+    font-size: 1.25rem;
+    color: var(--primary-clr);
+}
+
+/* blogs section */
+
+
+/* Menu section */
+
+#menu-section {
+    background-color: var(--secondary-clr);
+    color: var(--white);
+}
+
+.menu {
+    min-height: 70vh;
+}
+
+.right-menu-images {
+    flex-wrap: wrap;
+}
+
+.right-menu-images img {
+    width: 25rem;
+    margin: 1.5rem;
+}
+
+.left-menu-content {
+    text-align: left;
+}
+
+.left-menu-content h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1em;
+    padding-left: 0;
+    position: relative;
+}
+
+.left-menu-content h2::after {
+    content: "Discover";
+    font-family: 'Great Vibes', sans-serif;
+    position: absolute;
+    inset: 0;
+    font-size: 3rem;
+    color: var(--primary-clr);
+    text-transform: capitalize;
+}
+
+.left-menu-content p {
+    font-size: 1.3rem;
+    padding-right: 1rem;
+}
+
+.left-menu-content button {
+    margin: 1rem 0;
+    transition: all 500ms ease;
+}
+
+.left-menu-content button:hover {
+    background: var(--primary-clr);
+    color: var(--white);
+}
+
+/* Menu section */
+
+
+/* Contact Section */
+#contact-section {
+    background-image: url(/assets/image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(13, 13, 13, 0.89);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    color: var(--white);
+    min-height: 70vh;
+}
+
+.contact-container {
+    padding: 4rem;
+}
+
+.contact-container h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    padding-left: 0;
+    position: relative;
+}
+
+.contact-container {
+    gap: 2rem;
+}
+
+.contact-container h2::after {
+    content: "Get In Touch";
+    font-family: 'Great Vibes', sans-serif;
+    position: absolute;
+    inset: 0;
+    font-size: 3rem;
+    color: var(--primary-clr);
+    text-transform: capitalize;
+}
+
+.contact-container .contact-left p {
+    font-size: 1.75rem;
+    color: var(--primary-clr);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gray {
+    color: rgb(115, 108, 108) !important;
+}
+
+.contact-container .contact-left span {
+    font-size: 1.75rem;
+    color: var(--white);
+}
+
+.form-control {
+    padding: .5em .75em;
+    margin: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary-clr);
+}
+
+.form-control::placeholder,
+.form-control {
+    color: var(--white);
+}
+
+.contact-right button {
+    transition: all 500ms ease;
+    background: var(--primary-clr);
+    color: var(--white);
+}
+
+.contact-right button:hover {
+    background: transparent;
+    border: 1px solid var(--primary-clr);
+    color: var(--primary-clr);
+}
+
+/* Contact Section */
+
+/* Footer */
+footer {
+    background-color: var(--secondary-clr);
+    color: var(--white);
+    min-height: 10vh;
+    font-size: 1.5rem;
+}
+
+
+/* Footer */
